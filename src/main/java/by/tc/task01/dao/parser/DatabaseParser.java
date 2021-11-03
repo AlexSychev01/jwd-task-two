@@ -15,9 +15,11 @@ public class DatabaseParser {
 
 
     public static void main(String[] args) throws IOException, JDOMException {
+        String databasePath =
+                "F:\\EPAM_September\\by\\training\\jwd\\jwd-task01-template_v2\\src\\main\\resources\\appliancedatabase.xml";
 
         SAXBuilder saxBuilder = new SAXBuilder();
-        Document document = saxBuilder.build("F:\\EPAM_September\\by\\training\\jwd\\jwd-task01-template_v2\\src\\main\\resources\\appliancedatabase.xml");
+        Document document = saxBuilder.build(databasePath);
 
         Element root = document.getRootElement();
         List<Element> ap = root.getChildren();

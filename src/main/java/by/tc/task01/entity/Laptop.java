@@ -14,7 +14,7 @@ public class Laptop extends Appliance {
 
 
     public Laptop(int price, double batteryCapacity, String operationSystem, int memoryRam, int systemMemory, double cpu, int displayInches) {
-        super(price);
+
         this.batteryCapacity = batteryCapacity;
         this.operationSystem = operationSystem;
         this.memoryRam = memoryRam;
